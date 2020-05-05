@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+            function experiencia(anos){
+                var result = "Entrada invalida";
+                if(anos == 0 || anos == 1)
+                    result = "Iniciante";
+                else if(anos > 1 && anos <= 3)
+                    result = "Intermediário";
+                else if(anos > 3 && anos <= 6)
+                    result = "Avançado";
+                else if(anos > 6)
+                    result = "Jedi Master";
+
+                return result;
+            }
+            console.log(experiencia(435345))
+        </script>
+    </body>
+</html>
