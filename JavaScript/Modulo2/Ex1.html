@@ -10,14 +10,20 @@
         </div>
         <script>            
             var btn = document.querySelector('button.botao');
+            var count = 0;
 
-            btn.onclick = function(){
-                var quadrado = document.querySelector('.box');
-
+            btn.onclick = function() {
+                var quadrado = document.createElement('div');
                 quadrado.style.width = 100;
                 quadrado.style.height = 100;
-                quadrado.style.backgroundColor = '#f00';                      
-                
+                quadrado.style.position = 'absolute';
+                quadrado.style.left = count;
+                quadrado.style.right = count;
+                quadrado.style.backgroundColor = '#f00';
+
+                btn.appendChild(quadrado)
+
+                count += 110;
             }
         </script>
     </body>
