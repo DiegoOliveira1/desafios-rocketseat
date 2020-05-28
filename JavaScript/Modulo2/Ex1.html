@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div="app">
+            <button class="botao">Gerar Quadrado</button>  
+            <div class="box"></div>         
+        </div>
+        <script>            
+            var btn = document.querySelector('button.botao');
+            var box = document.querySelector('div.box');
+            var count = 0;
+
+            btn.onclick = function() {
+                var quadrado = document.createElement('div');
+                quadrado.style.width = 100;
+                quadrado.style.height = 100;
+                quadrado.style.position = 'absolute';
+                quadrado.style.left = count;
+                quadrado.style.right = count;
+                quadrado.style.backgroundColor = '#f00';                
+
+                box.appendChild(quadrado);
+
+                count += 110;
+            }
+        </script>
+    </body>
+</html>
