@@ -5,11 +5,12 @@
     </head>
     <body>
         <div="app">
-            <button class="botao">Gerar Quadrado</button>
-            <div class="box"></div>
+            <button class="botao">Gerar Quadrado</button>  
+            <div class="box"></div>         
         </div>
         <script>            
             var btn = document.querySelector('button.botao');
+            var box = document.querySelector('div.box');
             var count = 0;
 
             btn.onclick = function() {
@@ -19,9 +20,9 @@
                 quadrado.style.position = 'absolute';
                 quadrado.style.left = count;
                 quadrado.style.right = count;
-                quadrado.style.backgroundColor = '#f00';
+                quadrado.style.backgroundColor = '#f00';                
 
-                btn.appendChild(quadrado)
+                box.appendChild(quadrado);
 
                 count += 110;
             }
